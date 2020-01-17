@@ -37,8 +37,8 @@ describe('Checking Names', () => {
 
   test('User is Jeff', () => {
     const user = 'Jeff';
-    expect(jest.user()).toBe(Jeff)
-  });
+    expect(functions.createUser.user(user)).toBe('Jeff')
+    });
 
   test('User is Karen', () => {
     const user = 'Karen';
@@ -48,11 +48,11 @@ describe('Checking Names', () => {
 });
 
 test('Adds 2 + 2 to equal 4', () => {
-  expect(add(2,2)).ToEqual(4)
+  expect(functions.add(2,2)).toEqual(4)
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
-  // Complete here
+  expect(functions.add(2,2)).not(5)
 });
 
 /*
