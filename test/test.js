@@ -7,19 +7,19 @@ const isAnagram = require('../src/anagram');
 */
 
 test('isAnagram function exists', () => {
-  // Complete here
+  expect(isAnagram()).toBeDefined()
 });
 
 test('"cinema" is an anagram of "iceman"', () => {
-  // Complete here
+  expect(isAnagram('cinema','iceman')).toBeTruthy()
 });
 
 test('"Dormitory" is an anagram of "dirty room##"', () => {
-  // Complete here
+  expect(isAnagram('Dormitory', 'dirty room##')).toBeTruthy()
 });
 
 test('"Hello" is NOT an anagram of "Aloha"', () => {
-  // Complete here
+  expect(isAnagram('Hello','Aloha')).toBeFalsy()
 });
 
 /*
@@ -37,8 +37,7 @@ describe('Checking Names', () => {
 
   test('User is Jeff', () => {
     const user = 'Jeff';
-    //Check if the user is Jeff
-    // Complete here
+    expect(jest.user()).toBe(Jeff)
   });
 
   test('User is Karen', () => {
@@ -49,7 +48,7 @@ describe('Checking Names', () => {
 });
 
 test('Adds 2 + 2 to equal 4', () => {
-  // Complete here
+  expect(add(2,2)).ToEqual(4)
 });
 
 test('Adds 2 + 2 to NOT equal 5', () => {
