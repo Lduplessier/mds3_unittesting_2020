@@ -37,7 +37,7 @@ describe('Checking Names', () => {
 
   test('User is Jeff', () => {
     const user = 'Jeff';
-    expect(functions.createUser.user(user)).toBe('Jeff')
+    expect(functions.createUser(user)).toBe('Jeff')
     });
 
   test('User is Karen', () => {
@@ -69,7 +69,7 @@ test('Adds 2 + 2 to NOT equal 5', () => {
 // toBeFalsy matches anything that an if statement treats as false
 
 test('Should be null', () => {
-  // Complete here
+  expect (functions.isNull()).toBeNull
 });
 
 // toBeFalsy
@@ -86,7 +86,7 @@ test('User should be Marc Antoine object', () => {
 test('Should be under or equal 1000', () => {
   const load1 = 500;
   const load2 = 500;
-  // Complete here
+  expect (functions.add(load1,load2)).toEqual(1000)
 });
 
 // Regex
